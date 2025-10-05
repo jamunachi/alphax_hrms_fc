@@ -1,4 +1,4 @@
-
+﻿
 app_name = "alphax_hrms_fc"
 app_title = "AlphaX HRMS FC"
 app_publisher = "AlphaX"
@@ -6,7 +6,7 @@ app_description = "HRMS add-on: Leave, Attendance, Payslip, ESS, Theming, Polici
 app_email = "support@example.com"
 app_license = "MIT"
 
-app_include_css = ["alphax_hrms_fc/public/css/alphax.css"]
+app_include_css = ["/assets/alphax_hrms_fc/css/alphax.css"]
 app_include_js  = [
     "alphax_hrms_fc/public/js/boot.js",
     "alphax_hrms_fc/public/js/qr_loader.js"
