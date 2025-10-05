@@ -1,3 +1,0 @@
-﻿# AlphaX HRMS FC
-# No data or schema patches yet.
-# Add patch files here when you create migration patches in future versions.
