@@ -7,16 +7,15 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "noreply@example.com"
 app_license = "MIT"
 
-# Asset includes (bundles generated from public/build.json)
-app_include_css = ["/assets/alphax_hrms_fc/css/alphax.bundle.css"]
-app_include_js  = ["/assets/alphax_hrms_fc/js/alphax.bundle.js"]
+# Keep all includes empty so esbuild doesn't see any undefined paths.
+# All bundling is defined in public/build.json.
+app_include_css = []
+app_include_js  = []
 
-# Keep the rest empty/safe to avoid esbuild path issues
 web_include_css = []
 web_include_js  = []
+
 page_js = {}
 doctype_js = {}
 doctype_list_js = {}
 doctype_tree_js = {}
-website_theme_scss = ""
-
