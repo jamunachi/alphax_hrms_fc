@@ -7,7 +7,6 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "noreply@example.com"
 app_license = "MIT"
 
-# Leave EVERYTHING empty so esbuild has nothing to follow
 app_include_css = []
 app_include_js  = []
 
