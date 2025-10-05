@@ -7,7 +7,7 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# Keep asset includes empty; no build.json
+# keep these empty so esbuild has nothing to resolve until we wire assets
 app_include_css = []
 app_include_js  = []
 web_include_css = []
