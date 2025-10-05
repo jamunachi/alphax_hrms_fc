@@ -7,11 +7,11 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# Point to the tiny bundles from public/build.json
+# Point to the tiny bundles created by public/build.json
 app_include_css = ["/assets/alphax_hrms_fc/css/alphax.blank.css"]
 app_include_js  = ["/assets/alphax_hrms_fc/js/alphax.blank.js"]
 
-# Keep the rest empty
+# Keep everything else empty so esbuild doesn’t try to resolve anything else
 web_include_css = []
 web_include_js  = []
 website_theme_scss = ""
