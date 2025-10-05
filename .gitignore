@@ -10,3 +10,5 @@ dist/
 site_config.json
 patches.txt
 assets/.webassets-cache
+
+!alphax_hrms_fc/patches.txt
