@@ -1,0 +1,8 @@
+﻿{
+  "css/alphax.blank.css": [
+    "public/css/empty.css"
+  ],
+  "js/alphax.blank.js": [
+    "public/js/empty.js"
+  ]
+}
