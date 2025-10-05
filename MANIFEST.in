@@ -1,4 +1,7 @@
-
-recursive-include alphax_hrms_fc *.py *.json *.js *.html *.css
-include README.md
-include LICENSE
+﻿recursive-include alphax_hrms_fc *.py
+recursive-include alphax_hrms_fc *.json
+recursive-include alphax_hrms_fc *.txt
+recursive-include alphax_hrms_fc *.html
+recursive-include alphax_hrms_fc *.css
+recursive-include alphax_hrms_fc *.js
+prune node_modules

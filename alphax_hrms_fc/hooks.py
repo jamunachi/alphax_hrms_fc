@@ -7,9 +7,9 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# No asset bundling from hooks to avoid esbuild path issues
+# Keep asset includes empty; no build.json
 app_include_css = []
-app_include_js = []
+app_include_js  = []
 web_include_css = []
-web_include_js = []
+web_include_js  = []
 website_theme_scss = ""
