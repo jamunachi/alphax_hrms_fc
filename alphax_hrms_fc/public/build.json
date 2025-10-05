@@ -1,9 +1,0 @@
-﻿{
-  "css/alphax.bundle.css": [
-    "public/css/alphax.css"
-  ],
-  "js/alphax.bundle.js": [
-    "public/js/boot.js",
-    "public/js/qr_loader.js"
-  ]
-}
