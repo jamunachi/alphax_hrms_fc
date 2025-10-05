@@ -1,0 +1,41 @@
+{
+  "doctype": "DocType",
+  "name": "AlphaX Checkin Policy Assignment",
+  "module": "AlphaX HRMS FC",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "ALX-CIPA-.####",
+  "fields": [
+    {
+      "fieldname": "employee",
+      "label": "Employee",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "policy",
+      "label": "Policy",
+      "fieldtype": "Link",
+      "options": "AlphaX Checkin Policy",
+      "reqd": 1
+    },
+    {
+      "fieldname": "from_date",
+      "label": "From Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "to_date",
+      "label": "To Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "allow_outside",
+      "label": "Allow Outside for This Assignment",
+      "fieldtype": "Check",
+      "default": 0
+    }
+  ]
+}

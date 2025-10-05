@@ -1,0 +1,45 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="alx-card">
+        <div class="alx-heading">Quick Actions</div>
+        <div class="mt-3 d-flex gap-2 flex-wrap">
+          <button class="alx-btn" onclick="ALX.leave.openDialog()">Apply Leave</button>
+          <button class="alx-btn" onclick="ALX.attendance.check('IN')">Check-in</button>
+          <button class="alx-btn" onclick="ALX.attendance.check('OUT')">Check-out</button>
+        </div>
+      </div>
+
+      <div class="alx-card mt-3">
+        <div class="alx-heading">Payslip</div>
+        <div class="mt-2 d-flex gap-2">
+          <input class="form-control" id="alx-slip" placeholder="Salary Slip ID" />
+          <button class="alx-btn" onclick="ALX.payslip.download()">PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-8">
+      <div class="alx-card">
+        <div class="alx-heading">Employees</div>
+        <div class="table-responsive mt-2">
+          <table class="table table-sm table-alx" id="alx-employees">
+            <thead><tr><th>ID</th><th>Name</th><th>Company</th><th>Status</th><th>User</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="alx-card mt-3">
+        <div class="alx-heading">Leave Applications (latest)</div>
+        <div class="table-responsive mt-2">
+          <table class="table table-sm table-alx" id="alx-leaves">
+            <thead><tr><th>ID</th><th>Employee</th><th>Type</th><th>From</th><th>To</th><th>Status</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

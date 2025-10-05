@@ -1,0 +1,100 @@
+{
+  "doctype": "DocType",
+  "name": "AlphaX HRMS Settings",
+  "module": "AlphaX HRMS FC",
+  "custom": 0,
+  "issingle": 1,
+  "fields": [
+    {
+      "fieldname": "active_theme_name",
+      "label": "Active Theme Name",
+      "fieldtype": "Data",
+      "default": "Default"
+    },
+    {
+      "fieldname": "allow_portal_access",
+      "label": "Enable ESS Portal",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "section_qr",
+      "label": "QR & Check-in",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "enable_qr_scanner_desk",
+      "label": "Enable QR Scanner on Desk",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "enable_qr_scanner_portal",
+      "label": "Enable QR Scanner on Portal (ESS)",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "require_geolocation",
+      "label": "Require Geolocation for Check-in",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "qr_lib_url",
+      "label": "QR Library URL",
+      "fieldtype": "Data",
+      "default": "/assets/alphax_hrms_fc/js/vendor/html5-qrcode.min.js"
+    },
+    {
+      "fieldname": "section_policies",
+      "label": "Policy Choice & Defaults",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "allow_manual_policy_choice",
+      "label": "Allow Manual Policy Choice",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "prefer_employee_defaults",
+      "label": "Prefer Employee Default Branch/Project",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "section_geo",
+      "label": "Geo-Fence Defaults (legacy)",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "enable_geo_fence",
+      "label": "Enable Global Geo Fence (legacy)",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "fence_latitude",
+      "label": "Fence Latitude",
+      "fieldtype": "Float"
+    },
+    {
+      "fieldname": "fence_longitude",
+      "label": "Fence Longitude",
+      "fieldtype": "Float"
+    },
+    {
+      "fieldname": "fence_radius_m",
+      "label": "Fence Radius (m)",
+      "fieldtype": "Int",
+      "default": 150
+    },
+    {
+      "fieldname": "allow_outside_checkins",
+      "label": "Allow Outside Check-ins (legacy)",
+      "fieldtype": "Check",
+      "default": 0
+    }
+  ]
+}

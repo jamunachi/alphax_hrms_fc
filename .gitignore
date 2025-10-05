@@ -1,0 +1,12 @@
+
+*.pyc
+__pycache__/
+node_modules/
+dist/
+*.egg-info/
+*.log
+*.swp
+.DS_Store
+site_config.json
+patches.txt
+assets/.webassets-cache

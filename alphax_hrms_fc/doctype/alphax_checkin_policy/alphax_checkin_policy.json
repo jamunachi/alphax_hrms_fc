@@ -1,0 +1,71 @@
+{
+  "doctype": "DocType",
+  "name": "AlphaX Checkin Policy",
+  "module": "AlphaX HRMS FC",
+  "custom": 0,
+  "is_submittable": 0,
+  "autoname": "ALX-CIP-.####",
+  "fields": [
+    {
+      "fieldname": "policy_name",
+      "label": "Policy Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "scope_type",
+      "label": "Scope Type",
+      "fieldtype": "Select",
+      "options": "Branch\nWarehouse\nLocation\nProject",
+      "reqd": 1
+    },
+    {
+      "fieldname": "scope",
+      "label": "Scope",
+      "fieldtype": "Dynamic Link",
+      "options": "scope_type",
+      "reqd": 1
+    },
+    {
+      "fieldname": "latitude",
+      "label": "Latitude",
+      "fieldtype": "Float",
+      "reqd": 1
+    },
+    {
+      "fieldname": "longitude",
+      "label": "Longitude",
+      "fieldtype": "Float",
+      "reqd": 1
+    },
+    {
+      "fieldname": "radius_m",
+      "label": "Radius (m)",
+      "fieldtype": "Int",
+      "default": 150,
+      "reqd": 1
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "qr_required",
+      "label": "Require QR to Check-in",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "qr_token",
+      "label": "QR Token (secret)",
+      "fieldtype": "Password"
+    },
+    {
+      "fieldname": "notes",
+      "label": "Notes",
+      "fieldtype": "Small Text"
+    }
+  ]
+}

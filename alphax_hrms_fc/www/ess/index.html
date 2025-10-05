@@ -1,0 +1,39 @@
+
+{% extends "templates/web.html" %}
+{% block page_content %}
+<div class="alx-card">
+  <div class="alx-heading">Employee Self Service</div>
+  <div class="mt-3 d-flex gap-2 flex-wrap">
+    <button class="alx-btn" onclick="ALX.leave.openDialog()">Apply Leave</button>
+    <button class="alx-btn" onclick="ALX.attendance.check('IN')">Check-in</button>
+    <button class="alx-btn" onclick="ALX.attendance.check('OUT')">Check-out</button>
+    {% if frappe.get_value('AlphaX HRMS Settings', None, 'enable_qr_scanner_portal') %}
+    <button class="alx-btn" onclick="ALX.openQrScanner(function(val){ window.__alx_last_qr = val; frappe.show_alert({message:'QR captured', indicator:'green'}); });">Scan QR</button>
+    {% endif %}
+  </div>
+  <div class="mt-4 d-flex gap-2">
+    <input class="form-control" id="alx-slip" placeholder="Salary Slip ID" />
+    <button class="alx-btn" onclick="ALX.payslip.download()">Payslip PDF</button>
+  </div>
+</div>
+
+<div class="alx-card mt-4">
+  <div class="alx-heading">My Payslips</div>
+  <div id="alx-myslips" class="mt-2"></div>
+</div>
+<script>
+(function(){
+  frappe.call({ method:'alphax_hrms_fc.api.payslip.get_my_payslips', args:{limit:50} }).then(r => {
+    const rows = r.message || [];
+    const el = document.getElementById('alx-myslips');
+    if(!rows.length){ el.innerHTML = '<div class="text-muted">No payslips found.</div>'; return; }
+    let html = '<div class="table-responsive"><table class="table table-sm table-alx"><thead><tr><th>ID</th><th>From</th><th>To</th><th>Status</th><th>Gross</th><th>Net</th><th></th></tr></thead><tbody>';
+    rows.forEach(x => {
+      html += `<tr><td>${x.name}</td><td>${x.start_date||'-'}</td><td>${x.end_date||'-'}</td><td>${x.status||'-'}</td><td>${x.gross_pay||'-'}</td><td>${x.net_pay||'-'}</td><td><button class="alx-btn" onclick="(function(n){ frappe.call({ method:'alphax_hrms_fc.api.payslip.download_payslip_pdf', args:{salary_slip:n} }).then(r => { const url=r.message&&r.message.file_url; if(url) window.open(url,'_blank'); });})('${x.name}')">PDF</button></td></tr>`;
+    });
+    html += '</tbody></table></div>';
+    el.innerHTML = html;
+  });
+})();
+</script>
+{% endblock %}

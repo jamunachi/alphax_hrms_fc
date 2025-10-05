@@ -1,0 +1,14 @@
+
+:root{
+  --primary:#0ea5e9;
+  --secondary:#6366f1;
+  --accent:#22c55e;
+  --text-on-primary:#0b1220;
+  --heading-color:#ffffff;
+  --muted-bg:#0b1220;
+}
+.alx-btn{background:var(--primary);color:var(--text-on-primary);border:0;border-radius:12px;padding:.5rem .9rem}
+.alx-btn:hover{background:var(--secondary)}
+.alx-card{background:color-mix(in srgb, var(--muted-bg) 90%, white 10%);border:1px solid #ffffff1a;border-radius:16px;padding:16px;color:#fff}
+.alx-heading{color:var(--heading-color);font-weight:600}
+.table-alx th,.table-alx td{color:#fff}
