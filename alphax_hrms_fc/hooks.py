@@ -6,8 +6,8 @@ app_description = "HRMS add-on: Leave, Attendance, Payslip, ESS, Theming, Polici
 app_email = "support@example.com"
 app_license = "MIT"
 
-app_include_css = ["/assets/alphax_hrms_fc/css/alphax.bundle.css"]
-app_include_js  = [
+app_include_css = []
+app_include_js  = []
     "alphax_hrms_fc/public/js/boot.js",
     "alphax_hrms_fc/public/js/qr_loader.js"
 ]
@@ -18,3 +18,4 @@ fixtures = [
     {"doctype": "AlphaX Checkin Policy"},
     {"doctype": "AlphaX Checkin Policy Assignment"}
 ]
+
