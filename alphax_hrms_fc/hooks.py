@@ -13,4 +13,5 @@ app_include_js  = []
 web_include_css = []
 web_include_js  = []
 
+# *** keep this present (empty string), not None and not missing ***
 website_theme_scss = ""
