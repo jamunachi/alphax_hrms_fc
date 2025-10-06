@@ -7,11 +7,9 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# No assets during build isolation
 app_include_css = []
 app_include_js  = []
 web_include_css = []
 web_include_js  = []
 
-# *** keep this present (empty string), not None and not missing ***
 website_theme_scss = ""

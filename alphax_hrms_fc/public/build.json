@@ -1,13 +1,1 @@
-﻿@'
-{
-  "js/alphax_hrms.bundle.js": [
-    "public/js/vendor/html5-qrcode.min.js",
-    "public/js/qr_loader.js",
-    "page/alphax_hrms/alphax_hrms.js",
-    "public/js/boot.js"
-  ],
-  "css/alphax_hrms.bundle.css": [
-    "public/css/alphax.css"
-  ]
-}
-'@ | Set-Content -Encoding UTF8 .\alphax_hrms_fc\public\build.json
+﻿{}
