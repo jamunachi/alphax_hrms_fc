@@ -12,4 +12,4 @@ app_include_js  = []
 web_include_css = []
 web_include_js  = []
 
-website_theme_scss = "public/blank.scss"
+website_theme_scss = ""

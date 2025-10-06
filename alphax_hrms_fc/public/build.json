@@ -1,5 +1,8 @@
 ﻿{
   "css/alphax_hrms_fc.bundle.css": [
-    "public/blank.scss"
+    "public/blank.css"
+  ],
+  "js/alphax_hrms_fc.bundle.js": [
+    "public/noop.js"
   ]
 }
