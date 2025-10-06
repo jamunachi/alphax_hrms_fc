@@ -7,11 +7,10 @@ app_description = "HRMS utilities for ERPNext/Frappe Cloud"
 app_email = "support@example.com"
 app_license = "MIT"
 
-# keep assets disabled for now
 app_include_css = []
 app_include_js  = []
 web_include_css = []
 web_include_js  = []
 
-# IMPORTANT: give esbuild a real path, not empty or missing
+# Must be a valid path string; do NOT leave empty
 website_theme_scss = "public/blank.scss"
