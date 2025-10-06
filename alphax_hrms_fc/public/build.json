@@ -1,1 +1,4 @@
-﻿{ "css/alphax.min.css": [ "public/alphax.min.css" ] }
+﻿{
+  "css/alphax.min.css": [ "public/alphax.min.css" ],
+  "js/ok.js": [ "public/ok.js" ]
+}
