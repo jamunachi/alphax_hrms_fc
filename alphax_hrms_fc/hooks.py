@@ -12,5 +12,4 @@ app_include_js  = []
 web_include_css = []
 web_include_js  = []
 
-# Must be a valid path string; do NOT leave empty
 website_theme_scss = "public/blank.scss"
